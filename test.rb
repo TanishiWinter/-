@@ -38,3 +38,5 @@ end
 n = 20  # 任意のnに変更できます
 result = tribonacci(n)
 puts "T(#{n}) = #{result}"
+
+#09/08にピタゴラスの定理作成
