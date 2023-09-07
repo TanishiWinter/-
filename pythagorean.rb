@@ -1,3 +1,4 @@
+#ピタゴラスの定理
 def pythagorean_theorem(a, b)
   c_squared = a**2 + b**2
   c = Math.sqrt(c_squared)
