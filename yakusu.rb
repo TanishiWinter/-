@@ -61,3 +61,24 @@ result = lcm_of_numbers(numbers)
 
 # 結果を表示
 puts "配列内の数の最小公倍数: #{result}"
+
+
+
+#約数列挙
+def find_divisors(n)
+  divisors = []
+
+  # 1からnまでの数を順番に調べ、nを割り切れる数を約数として追加する
+  for i in 1..n
+    if n % i == 0
+      divisors << i
+    end
+  end
+
+  return divisors
+end
+
+# この関数を使って約数を列挙する例
+number = 12 # 約数を列挙したい整数
+divisors = find_divisors(number)
+puts "約数: #{divisors}"
